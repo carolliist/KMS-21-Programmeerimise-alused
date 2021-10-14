@@ -10,14 +10,14 @@ Paras temperatuur tagastab 0
 Liiga kuum tagastab 1
 */
 
-let checkTemp;
-
-if (checkTemp <= 20 && checkTemp >=0) {
-    console.log('-1');
-} else if (checkTemp <= 40 && checkTemp >= 21) {
-    console.log('0');
-} else if (checkTemp >= 41 && checkTemp <= 60) {
-    console.log('1');
-} else {
-   console.log('Error: 1. Sisestus puudub. 2. Sisestatud on liiga suur number. 3. Sisestatud on negatiivne number.');
-}
+function checkTemp(temperatuur) {
+    if (temperatuur >= 0 && temperatuur <=20) {
+        return -1
+    } else if (temperatuur >= 21 && temperatuur <= 40) {
+        return 0
+    } else if (temperatuur >= 41 && temperatuur <= 60) {
+        return 1
+    } else {
+       console.log('Error: 1. Sisestus puudub. 2. Sisestatud on liiga suur number. 3. Sisestatud on negatiivne number.');
+    }
+    }
