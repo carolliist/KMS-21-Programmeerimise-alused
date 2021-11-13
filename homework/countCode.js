@@ -11,18 +11,18 @@ const data = ["FWmcfgAWxe", "KnFJXGcACq", "cCYApSPiX0", "iHwbq2giBx", "X5Ebl6sjL
 			"jxL8zSOcZN", "87YqnuB6Mc", "qr1WbVsWv", "fLC17MbW59", "tJ6Z5r6mDd", "iiEffxACk7",
 			"C6w4k9AS2N", "9rQTNM8xmG", "x4JQLDr6hd", "3bYXSm7Zgo", "phTYCmMxOW", "isl31Fd0SN",
 			"CZItvlfdqW"];
-			function countCode(upperFirstLetter){
-			//const result = friends.map(([v])=> v);
-        	//console.log(result);        
-        		let result;
-				let counter = 0;
-				for (let element of data) {
-					let firstLetter = element.charAt(0);
-					if (upperFirstLetter == firstLetter) { 
-						result = firstLetter;
-						counter++;
-					}
-				} console.log("Täht - " + result + " Mitu korda esineb seda tähte - " + counter);
-				return counter;
+function countCode(upperFirstLetter){
+	//const result = friends.map(([v])=> v);
+       	//console.log(result);        
+    	let result;
+	let counter = 0;
+	for (let element of data) {
+		let firstLetter = element.charAt(0);
+		if (upperFirstLetter == firstLetter) { 
+			result = firstLetter;
+			counter++;
+		}
+	} console.log("Täht - " + result + " Mitu korda esineb seda tähte - " + counter);
+	return counter;
 }
 
